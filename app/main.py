@@ -22,6 +22,7 @@ from app.services.question_bank import QuestionBankManager
 from app.services.adaptive_engine import AdaptiveEngine
 from app.data.sample_questions import get_questions_for_role, ROLES, SKILL_DIMENSIONS
 from app.services.course_ingestion_service import CourseIngestionService
+from app.data.fetch_real_courses import fetch_coursera_courses
 from app.routers import recommendations
 import uuid
 from datetime import datetime
@@ -100,10 +101,16 @@ async def startup_event():
         init_question_bank(db)
         print("Question bank initialized successfully")
         
-        # Initialize course data
-        course_service = CourseIngestionService()
-        course_service.ingest_courses(db)
-        print("Course data initialized successfully")
+        # Fetch and ingest real courses from Coursera
+        print("Fetching courses from Coursera...")
+        courses = fetch_coursera_courses()
+        if courses:
+            print(f"Fetched {len(courses)} courses from Coursera")
+            course_service = CourseIngestionService()
+            course_service.ingest_courses(db, courses)
+            print("Course data initialized successfully")
+        else:
+            print("Warning: No courses fetched from Coursera, check API response")
     except Exception as e:
         print(f"Error during initialization: {e}")
     finally:

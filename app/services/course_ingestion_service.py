@@ -61,8 +61,13 @@ class CourseIngestionService:
             print(f"Error processing course {course['title']}: {str(e)}")
             raise
     
-    def ingest_courses(self, db: Session, courses_path: str = None):
-        """Ingest courses into the database from JSON file or sample data"""
+    def ingest_courses(self, db: Session, courses_data=None):
+        """Ingest courses into the database.
+        
+        Args:
+            db (Session): Database session
+            courses_data: Either a list of course dictionaries or a path to JSON file
+        """
         try:
             print("Checking for existing courses...")
             # Delete existing courses to force re-ingestion
@@ -70,9 +75,13 @@ class CourseIngestionService:
             db.commit()
             print("Deleted existing courses")
             
-            # Load courses from JSON or fallback to samples
-            courses = load_courses_from_json(courses_path)
-            print(f"Total courses to ingest: {len(courses)}")
+            # Handle both direct course data and file paths
+            if isinstance(courses_data, list):
+                courses = courses_data
+                print(f"Using provided course data: {len(courses)} courses")
+            else:
+                courses = load_courses_from_json(courses_data)
+                print(f"Loaded {len(courses)} courses from file")
             
             for course in courses:
                 course_with_embedding = self.process_course(course)

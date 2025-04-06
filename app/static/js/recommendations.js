@@ -101,16 +101,7 @@ function renderRecommendations(recommendations) {
                     `).join('')}
                 </div>
                 
-                <div class="flex items-center justify-between text-sm text-[#B0B0B0] mb-6">
-                    <div class="flex items-center">
-                        <i class="ri-time-line ri-lg mr-1 w-5 h-5 flex items-center justify-center"></i>
-                        <span>${course.duration_hours}h</span>
-                    </div>
-                    <div>
-                        <span class="font-medium text-white">${course.cost === 0 ? 'Free' : `$${course.cost}`}</span>
-                    </div>
-                </div>
-                
+
                 <a href="${course.url}" target="_blank" class="block w-full bg-primary hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded !rounded-button text-center transition-colors">
                     View Course
                 </a>

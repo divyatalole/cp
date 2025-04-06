@@ -9,19 +9,43 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 def map_skills(course_name: str, description: str) -> List[str]:
-    """Map course content to relevant skills."""
+    """Map course content to relevant skills based on our assessment dimensions."""
     skills = set()
     
-    # Basic skill mapping based on keywords
+    # Map to our assessment skill dimensions
     skill_keywords = {
-        'python': ['python', 'programming', 'coding'],
-        'javascript': ['javascript', 'js', 'web development'],
-        'data_science': ['data science', 'machine learning', 'ai', 'statistics'],
-        'cloud_computing': ['aws', 'azure', 'cloud', 'devops'],
-        'web_development': ['web', 'html', 'css', 'frontend'],
-        'database': ['sql', 'database', 'mysql', 'postgresql'],
-        'system_design': ['system design', 'architecture', 'scalability'],
-        'algorithms': ['algorithm', 'data structure', 'leetcode'],
+        'algorithm_knowledge': [
+            'algorithm', 'data structure', 'complexity', 'sorting', 'searching',
+            'leetcode', 'competitive programming', 'problem solving'
+        ],
+        'coding_proficiency': [
+            'programming', 'coding', 'development', 'implementation', 'software engineering',
+            'python', 'java', 'javascript', 'c++', 'coding practice'
+        ],
+        'system_design': [
+            'system design', 'architecture', 'scalability', 'distributed systems',
+            'microservices', 'design patterns', 'software architecture'
+        ],
+        'debugging': [
+            'debugging', 'troubleshooting', 'error handling', 'testing',
+            'bug fixing', 'code review', 'quality assurance'
+        ],
+        'testing_qa': [
+            'testing', 'quality assurance', 'unit testing', 'integration testing',
+            'test automation', 'qa', 'test cases', 'test driven development'
+        ],
+        'devops': [
+            'devops', 'ci/cd', 'deployment', 'cloud', 'infrastructure',
+            'aws', 'azure', 'docker', 'kubernetes', 'continuous integration'
+        ],
+        'security': [
+            'security', 'authentication', 'authorization', 'encryption',
+            'cybersecurity', 'web security', 'secure coding', 'penetration testing'
+        ],
+        'communication': [
+            'documentation', 'technical writing', 'collaboration', 'teamwork',
+            'code documentation', 'api documentation', 'technical communication'
+        ]
     }
     
     content = (course_name + ' ' + description).lower()
@@ -52,10 +76,10 @@ def fetch_coursera_courses() -> List[Dict[str, Any]]:
     url = "https://api.coursera.org/api/courses.v1"
     params = {
         "limit": 50,
-        "includes": "partnerIds,description",
-        "fields": "name,description,slug,partnerIds",
+        "includes": "partnerIds,description,v2Details",
+        "fields": "name,description,slug,partnerIds,primaryLanguages,workload,domainTypes",
         "q": "search",
-        "query": "computer science programming"  # Focus on relevant courses
+        "query": "computer science software engineering programming"  # Focus on relevant courses
     }
     
     try:
@@ -74,6 +98,19 @@ def fetch_coursera_courses() -> List[Dict[str, Any]]:
             if not title or not description:
                 continue
                 
+            # Extract workload if available
+            workload = None
+            if 'workload' in course:
+                try:
+                    # Convert workload string (e.g., "4-6 hours/week") to hours
+                    workload_str = course['workload'].lower()
+                    if 'hours' in workload_str:
+                        hours = [int(n) for n in workload_str.split() if n.isdigit()]
+                        if hours:
+                            workload = sum(hours) / len(hours)  # Average if range given
+                except Exception as e:
+                    logger.warning(f"Could not parse workload for {title}: {e}")
+            
             course_data = {
                 "title": title,
                 "description": description,
@@ -81,7 +118,7 @@ def fetch_coursera_courses() -> List[Dict[str, Any]]:
                 "skills": map_skills(title, description),
                 "url": f"https://www.coursera.org/learn/{course['slug']}",
                 "cost": 49.99,  # Default price for Coursera courses
-                "duration_hours": estimate_duration(description),
+                "duration_hours": workload or estimate_duration(description),
                 "relevance_score": 0  # Will be calculated during recommendation
             }
             result.append(course_data)
