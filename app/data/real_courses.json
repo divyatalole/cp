@@ -1,0 +1,206 @@
+[
+  {
+    "title": "Computer Science: Programming with a Purpose",
+    "description": "The basis for education in the last millennium was “reading, writing, and arithmetic;” now it is reading, writing, and computing. Learning to program is an essential part of the education of every student, not just in the sciences and engineering, but in the arts, social sciences, and humanities, as well. Beyond direct applications, it is the first step in understanding the nature of computer science’s undeniable impact on the modern world.  This course covers the first half of our book Computer Science: An Interdisciplinary Approach (the second half is covered in our Coursera course Computer Science: Algorithms, Theory, and Machines). Our intent is to teach programming to those who need or want to learn it, in a scientific context. \n\nWe begin by introducing basic programming elements such as variables, conditionals, loops, arrays, and I/O. Next, we turn to functions, introducing key concepts such as recursion, modular programming, and code reuse. Then, we present a modern introduction to object-oriented programming.\n\nWe use the Java programming language and teach basic skills for computational problem solving that are applicable in many modern computing environments. Proficiency in Java is a goal, but we focus on fundamental concepts in programming, not Java per se.\n\nAll the features of this course are available for free. People who are interested in digging deeper into the content may wish to obtain the textbook Computer Science: An Interdisciplinary Approach  (upon which the course is based) or to visit the website introcs.cs.princeton.edu for a wealth of additional material.\n\nThis course does not offer a certificate upon completion.",
+    "platform": "Coursera",
+    "skills": [
+      "data_science",
+      "python",
+      "algorithms",
+      "web_development"
+    ],
+    "url": "https://www.coursera.org/learn/cs-programming-java",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Computer Science:  Algorithms, Theory, and Machines",
+    "description": "This course  introduces the broader discipline of computer science to people having basic familiarity with Java programming.  It covers the second half of our book Computer Science: An Interdisciplinary Approach (the first half is covered in our Coursera course Computer Science: Programming with a Purpose, to be released in the fall of 2018). Our intent is to demystify computation and to build awareness about the substantial intellectual underpinnings and rich history of the field of computer science.\n\nFirst, we introduce classic algorithms along with scientific techniques for evaluating performance, in the context of modern applications. Next, we introduce classic theoretical models that allow us to address fundamental questions about computation, such as computability, universality, and intractability. We conclude with machine architecture (including machine-language programming and its relationship to coding in Java) and logic design (including a full CPU design built from the ground up).\n\nThe course emphasizes the relationships between applications programming, the theory of computation, real computers, and the field's history and evolution, including the nature of the contributions of Boole, Shannon, Turing, von Neumann, and others.\n\nAll the features of this course are available for free. People who are interested in digging deeper into the content may wish to obtain the textbook Computer Science: An Interdisciplinary Approach  (upon which the course is based) or to visit the website introcs.cs.princeton.edu for a wealth of additional material.\n\nThis course does not offer a certificate upon completion.",
+    "platform": "Coursera",
+    "skills": [
+      "python",
+      "web_development",
+      "system_design",
+      "data_science",
+      "algorithms"
+    ],
+    "url": "https://www.coursera.org/learn/cs-algorithms-theory-machines",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Problem Solving, Python Programming, and Video Games",
+    "description": "This course is an introduction to computer science and programming in Python.  Upon successful completion of this course, you will be able to:\n\n1.  Take a new computational problem and solve it, using several problem solving techniques including abstraction and problem decomposition.\n2.  Follow a design creation process that includes: descriptions, test plans, and algorithms.\n3.  Code, test, and debug a program in Python, based on your design.\n\nImportant computer science concepts such as problem solving (computational thinking), problem decomposition, algorithms, abstraction, and software quality are emphasized throughout.\n\nThis course uses problem-based learning. The Python programming language and video games are used to demonstrate computer science concepts in a concrete and fun manner. The instructional videos present Python using a conceptual framework that can be used to understand any programming language. This framework is based on several general programming language concepts that you will learn during the course including: lexics, syntax, and semantics.\n\nOther approaches to programming may be quicker, but are more focused on a single programming language, or on a few of the simplest aspects of programming languages. The approach used in this course may take more time, but you will gain a deeper understanding of programming languages. After completing the course,  in addition to learning Python programming, you will be able to apply the knowledge and skills you acquired to: non-game problems, other programming languages, and other computer science courses.\n\nYou do not need any previous programming, Python, or video game experience.  However, several basic skills are needed: computer use (e.g., mouse, keyboard, document editing), elementary mathematics, attention to detail (as with many technical subjects), and a “just give it a try” spirit will be keys to your success.  Despite the use of video games for the main programming project, PVG is not about computer games.  For each new programming concept, PVG uses non-game examples to provide a basic understanding of computational principles, before applying these programming concepts to video games.\n\nThe interactive learning objects (ILO) of the course provide automatic, context-specific guidance and feedback, like a virtual teaching assistant, as you develop problem descriptions, functional test plans, and algorithms.  The course forums are supported by knowledgeable University of Alberta personnel, to help you succeed.\n\nAll videos, assessments, and ILOs are available free of charge.  There is an optional Coursera certificate available for a fee.",
+    "platform": "Coursera",
+    "skills": [
+      "data_science",
+      "python",
+      "algorithms"
+    ],
+    "url": "https://www.coursera.org/learn/problem-solving-programming-video-games",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Introduction to Programming with MATLAB",
+    "description": "This course teaches computer programming to those with little to no previous experience. It uses the programming system and language called MATLAB to do so because it is easy to learn, versatile and very useful for engineers and other professionals. MATLAB is a special-purpose language that is an excellent choice for writing moderate-size programs that solve problems involving the manipulation of numbers. The design of the language makes it possible to write a powerful program in a few lines. The problems may be relatively complex, while the MATLAB programs that solve them are relatively simple: relative, that is, to the equivalent program written in a general-purpose language, such as C++ or Java. As a result, MATLAB is being used in a wide variety of domains from the natural sciences, through all disciplines of engineering, to finance, and beyond, and it is heavily used in industry. Hence, a solid background in MATLAB is an indispensable skill in today’s job market.\n\nNevertheless, this course is not a MATLAB tutorial. It is an introductory programming course that uses MATLAB to illustrate general concepts in computer science and programming. Students who successfully complete this course will become familiar with general concepts in computer science, gain an understanding of the general concepts of programming, and obtain a solid foundation in the use of MATLAB.\n\nStudents taking the course will get a MATLAB Online license free of charge for the duration of the course. The students are encouraged to consult the eBook that this course is based on. More information about these resources can be found on the Resources menu on the right.",
+    "platform": "Coursera",
+    "skills": [
+      "data_science",
+      "python"
+    ],
+    "url": "https://www.coursera.org/learn/matlab",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "IoT Enabled Farming",
+    "description": "Discover the revolutionizing impact of IoT in agriculture through this comprehensive course. In Module 1, \"Introduction to IoT in Agriculture,\" you'll delve into the fundamentals of smart farming, examining IoT integration, sensor applications, and associated benefits and challenges. Module 2, \"IoT Sensors, Devices and Analytics in Smart Agriculture,\" delves deeper into advanced concepts such as smart machinery, wireless sensor networks, big data management, and predictive analytics for precision agriculture. Gain practical skills and theoretical insights through real-world examples, enabling you to optimize farm management, boost productivity, and ensure sustainability in the evolving agricultural landscape.\n\nTarget Learner:\n1) Farmers and Agronomists: Individuals actively engaged in agricultural production who seek to optimize their farming operations through the integration of IoT devices and data-driven decision-making.\n\n2) Precision Agriculture Specialists: Professionals specializing in precision agriculture techniques, including the use of sensors, drones, GPS technology, and data analytics to maximize crop yield, minimize input costs, and enhance environmental sustainability.\n\n3) Agri-Tech Entrepreneurs: Innovators and entrepreneurs developing IoT solutions for the agriculture sector, including hardware devices, software platforms, and analytics tools aimed at improving farm productivity, efficiency, and sustainability.\n\n4) Agricultural Engineers: Engineers and technologists with a focus on agricultural machinery, automation systems, and smart farming technologies who wish to deepen their understanding of IoT applications in agriculture.\n\n5) Environmental Scientists: Researchers and scientists interested in studying the environmental impact of agricultural practices and exploring IoT solutions for sustainable farming, soil health monitoring, water conservation, and biodiversity preservation.\n\n6) Data Scientists and Analysts: Professionals with expertise in data analysis, machine learning, and statistical modeling who are interested in applying their skills to agricultural datasets generated by IoT sensors and devices.\n\n\nTo be successful in this course, you should have a background in:\n\n1) Agriculture or Agronomy: Understanding fundamental concepts of agriculture, crop production, soil science, pest management, and agricultural economics provides a strong foundation for grasping how IoT technologies can be applied in farming contexts.\n\n2) Technology and Engineering: Basic knowledge of electronics, sensors, data communication protocols, and hardware/software integration is helpful for understanding how IoT devices collect, transmit, and analyze agricultural data.\n\n3) IoT and Networking: Familiarity with Internet of Things (IoT) concepts, wireless communication protocols (e.g., Wi-Fi, Bluetooth, Zigbee), and network infrastructure is essential for comprehending the connectivity aspects of IoT-enabled farming systems.\n\n4) Data Analysis and Statistics: Proficiency in data analysis tools and statistical methods is valuable for interpreting agricultural data collected by IoT devices, identifying patterns, and deriving actionable insights to improve farm management decisions.\n\n5) Environmental Science: Knowledge of environmental factors influencing crop growth, such as weather patterns, temperature, humidity, and soil moisture, helps in understanding how IoT sensors can monitor and optimize these conditions for optimal crop yield.\n\n6) Computer Science and Programming: Basic programming skills in languages such as Python, R, or JavaScript are beneficial for working with IoT data, developing custom analytics algorithms, and integrating IoT solutions with other software platforms.",
+    "platform": "Coursera",
+    "skills": [
+      "data_science",
+      "python",
+      "algorithms",
+      "javascript"
+    ],
+    "url": "https://www.coursera.org/learn/iot-enabled-farming",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Object-Oriented Programming and Java Fundamentals",
+    "description": "This course provides a comprehensive introduction to Object-Oriented Programming (OOP) using Java, covering foundational and advanced topics. Starting with OOP principles, students will learn about classes, objects, and terminology through practical exercises like creating a Motor Bike Java class and working with book instances. The course delves into:\n\n- Encapsulation, abstraction, and constructors, reinforced by exercises and puzzles. \n- Primitive data types and their alternatives, with in-depth explanations and exercises on Java integer, floating point, Boolean, and character data types. Puzzles and real-world problems enhance understanding. \n- Conditionals, loops, and reference types build a strong programming foundation through practical application. \n\nThe course explores arrays and ArrayLists, teaching students to create, access, and manipulate them with numerous exercises. Finally, a deeper dive into class design, inheritance, and polymorphism prepares students for complex programming challenges. \n\nDesigned for aspiring Java developers, programming enthusiasts, and computer science students with basic programming knowledge, this course requires no prior Java experience.",
+    "platform": "Coursera",
+    "skills": [
+      "python"
+    ],
+    "url": "https://www.coursera.org/learn/packt-object-oriented-programming-and-java-fundamentals-e66rj",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Introduction to Python",
+    "description": "In today’s society, uses for new technologies are broadening in scope and revolutionizing the world. Many new technologies automate redundant tasks so people may complete tasks of greater priority. These new automated technologies depend on the constant innovation of software. To develop software that can increase our efficiency and change the world for the better, it is vital to understand how to code using different programming languages. This specialization introduces the basics of the Python programming language and teaches how to implement solutions to real-world problems using Python syntax. Topics in this course range from utilizing integrated development environments (IDEs) to implementing Python syntax in scripts. Some of the position titles that may benefit from this course are computer scientist, computer engineer, software engineer, software developer, software tester, electrical engineer, mechanical engineer, chemical engineer and aerospace engineer. \n\nYou do not need programming or computer science experience to learn the material in this course. This course is open to anyone who is interested in learning how to code and write programs in Python. We are very excited that you will be learning with us and hope you enjoy the course!",
+    "platform": "Coursera",
+    "skills": [
+      "python"
+    ],
+    "url": "https://www.coursera.org/learn/introduction-to-python-1",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Object-Oriented Programming and GUI with Python",
+    "description": "In this course we will implement object-oriented programming into Python programs; outline the importance of why and how we use object-oriented programming; and learn how to use inheritance when designing a program. We will also look at how to build a graphical user interface for a basic program. \n\nYou do not need programming or computer science experience to learn the material in this course. This course is open to anyone who is interested in learning how to code and write programs in Python. We are very excited that you will be learning with us and hope you enjoy the course!",
+    "platform": "Coursera",
+    "skills": [
+      "python"
+    ],
+    "url": "https://www.coursera.org/learn/object-oriented-programming-and-gui-with-python",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Data Analysis and Visualization with Python",
+    "description": "In this course, you will learn how to read and write data from and to a file. You will also examine how to manipulate and analyze the data using lists, tuples, dictionaries, sets, and the pandas and Matplot libraries. \n\nAs a developer, it's important to understand how to deal with issues that could cause an application to crash. You will learn how to implement exceptions to handle these issues.\n\nYou do not need a programming or computer science background to learn the material in this course. This course is open to anyone who is interested in learning how to code and write programs in Python. We are very excited that you will be learning with us and hope you enjoy the course!",
+    "platform": "Coursera",
+    "skills": [
+      "python"
+    ],
+    "url": "https://www.coursera.org/learn/data-analysis-and-visualization-with-python",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Introduction to Machine Learning with Python",
+    "description": "This course will give you an introduction to machine learning with the Python programming language. You will learn about supervised learning, unsupervised learning, deep learning, image processing, and generative adversarial networks. You will implement machine learning models using Python and will learn about the many applications of machine learning used in industry today. You will also learn about and use different machine learning algorithms to create your models.\n\nYou do not need a programming or computer science background to learn the material in this course. This course is open to anyone who is interested in learning how to code and write programs in Python. We are very excited that you will be learning with us and hope you enjoy the course!",
+    "platform": "Coursera",
+    "skills": [
+      "data_science",
+      "python",
+      "algorithms"
+    ],
+    "url": "https://www.coursera.org/learn/introduction-to-machine-learning-with-python",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "IoT Based System Design: Foundations and Applications",
+    "description": "IoT-Based System Design: Foundations and Applications is a comprehensive course designed to provide learners with a solid understanding of Internet of Things (IoT) technologies and their practical applications. Through a combination of theoretical learning and hands-on exercises, participants will explore the fundamental concepts, hardware components, software platforms, and real-world use cases of IoT systems. The course is structured to cater to learners ranging from beginners to those with intermediate-level knowledge in the field, offering a progressive learning experience that equips them with the skills needed to design, develop, and deploy IoT solutions across various industries.\n\nThis course caters to a diverse audience, ranging from students pursuing degrees in computer science or engineering to professionals transitioning into IoT roles and entrepreneurs exploring innovative solutions. It is also suitable for technology enthusiasts eager to delve into the world of IoT and its practical applications. Whether you're a beginner looking to grasp the basics or an intermediate learner seeking to deepen your understanding and skills in IoT system design, this course provides a structured learning experience to accommodate your needs and aspirations in the field.\n\nTo make the most of this course, participants should possess a basic understanding of computer science principles and fundamental programming concepts. Familiarity with electronics and networking fundamentals will also be beneficial. However, what matters most is a genuine interest in IoT technologies and their potential applications across various industries. Whether you're a student, a professional, or an enthusiast, this course provides the opportunity to develop the knowledge and skills needed to embark on a rewarding journey in IoT-based system design and development.",
+    "platform": "Coursera",
+    "skills": [
+      "python",
+      "system_design"
+    ],
+    "url": "https://www.coursera.org/learn/iot-based-system-design-foundations-and-applications",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Data Science with NumPy, Sets, and Dictionaries",
+    "description": "Become proficient in NumPy, a fundamental Python package crucial for careers in data science. This comprehensive course is tailored to novice programmers aspiring to become data scientists, software developers, data analysts, machine learning engineers, data engineers, or database administrators.\n\nStarting with foundational computer science concepts, such as object-oriented programming and data organization using sets and dictionaries, you'll progress to more intricate data structures like arrays, vectors, and matrices. Hands-on practice with NumPy will equip you with essential skills to tackle big data challenges and solve data problems effectively. You'll write Python programs to manipulate and filter data, as well as create useful insights out of large datasets.\n\nBy the end of the course, you'll be adept at summarizing datasets, such as calculating averages, minimums, and maximums. Additionally, you'll gain advanced skills in optimizing data analysis with vectorization and randomizing data.\n\nThroughout your learning journey, you'll use many kinds of data structures and analytic techniques for a variety of data science challenges , including mathematical operations, text file analysis, and image processing. Stepwise, guided assignments each week will reinforce your skills, enabling you to solve problems and draw data-driven conclusions independently.\n\nPrepare yourself for a rewarding career in data science by mastering NumPy and honing your programming prowess. Start this transformative learning experience today!",
+    "platform": "Coursera",
+    "skills": [
+      "database",
+      "data_science",
+      "python",
+      "algorithms"
+    ],
+    "url": "https://www.coursera.org/learn/numpy-data-science",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Cloud Computing Concepts, Part 1",
+    "description": "Cloud computing systems today, whether open-source or used inside companies, are built using a common set of core techniques, algorithms, and design philosophies – all centered around distributed systems. Learn about such fundamental distributed computing \"concepts\" for cloud computing.\n \nSome of these concepts include: clouds, MapReduce, key-value/NoSQL stores, classical distributed algorithms, widely-used distributed algorithms, scalability, trending areas, and much, much more! \n \nKnow how these systems work from the inside out. Get your hands dirty using these concepts with provided homework exercises. In the programming assignments, implement some of these concepts in template code (programs) provided in the C++ programming language. Prior experience with C++ is required.\n \nThe course also features interviews with leading researchers and managers, from both industry and academia.",
+    "platform": "Coursera",
+    "skills": [
+      "python",
+      "cloud_computing",
+      "system_design",
+      "database",
+      "algorithms"
+    ],
+    "url": "https://www.coursera.org/learn/cloud-computing",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Introduction to Programming",
+    "description": "Designed for the not-yet-experienced programmer, this course will provide you with a structured foundation for developing complex programs in the fields of computer science or data science. If you are a self-taught programmer with scattered bits of understanding, or a complete novice, this is the course for you.\n\nHere, you will gain a thorough understanding of how to write programs to solve problems, through structured, scaffolded, hands-on exercises with many examples and opportunities to practice. You will learn the foundational concepts of computer science by developing programs in the python programming language (one of the most commonly used languages).  \n\nWe will also use many of the most common python packages -- why reinvent the wheel when you can use well-tested, flexible, pre-built solutions? While these packages can save significant time, it is also important to understand how they do their magic, and if your particular problem is the right fit to be solved by these potential tools.  You will encounter the following python packages: numpy, scipy, matplotlib, pandas, seaborn, re (for regular expressions), textblob, nltk, and others.\n\nIn the process of learning how to program, we will explore different topics at the introductory level, including natural language processing and data analytics.\n\nBy the end of this course, you will be confident in your ability to solve a problem using the python programming language -- and how to verify that your solution is accurate.",
+    "platform": "Coursera",
+    "skills": [
+      "data_science",
+      "python"
+    ],
+    "url": "https://www.coursera.org/learn/ball-state-university-introduction-to-programming-open-content",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Optimization for Decision Making",
+    "description": "In this data-driven world, companies are often interested in knowing what is the \"best\" course of action, given the data. For example, manufacturers need to decide how many units of a product to produce given the estimated demand and raw material availability? Should they make all the products in-house or buy some from a third-party to meet the demand? Prescriptive Analytics is the branch of analytics that can provide answers to these questions. It is used for prescribing data-based decisions. The most important method in the prescriptive analytics toolbox is optimization. This course will introduce students to the basic principles of linear optimization for decision-making. Using practical examples, this course teaches how to convert a problem scenario into a mathematical model that can be solved to get the best business outcome. We will learn to identify decision variables, objective function, and constraints of a problem, and use them to formulate and solve an optimization problem using Excel solver and spreadsheet.",
+    "platform": "Coursera",
+    "skills": [
+      "data_science"
+    ],
+    "url": "https://www.coursera.org/learn/optimization-for-decision-making",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  }
+]

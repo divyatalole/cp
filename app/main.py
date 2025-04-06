@@ -31,8 +31,12 @@ import json
 # Define skill dimensions
 skill_dimensions = list(SKILL_DIMENSIONS.values())
 
-# Create database tables
+# Drop and recreate all tables
+print("Dropping all tables...")
+Base.metadata.drop_all(bind=engine)
+print("Creating all tables...")
 Base.metadata.create_all(bind=engine)
+print("Database tables recreated successfully")
 
 app = FastAPI(title="Tech Industry Competency Assessment Engine")
 
@@ -116,7 +120,12 @@ async def assessment_page(request: Request, assessment_id: str):
 @app.get("/results/{session_id}")
 async def results_page(request: Request, session_id: str):
     """Serve the results page HTML."""
-    return templates.TemplateResponse("results.html", {"request": request})
+    return templates.TemplateResponse("results.html", {"request": request, "session_id": session_id})
+
+@app.get("/recommendations/{session_id}")
+async def recommendation_page(request: Request, session_id: str):
+    """Serve the recommendations page HTML."""
+    return templates.TemplateResponse("recommendations.html", {"request": request, "session_id": session_id})
 
 @app.get("/api/results/{session_id}", response_model=AssessmentResult)
 async def get_results(session_id: str, db: Session = Depends(get_db)):
@@ -424,6 +433,20 @@ def get_competency_level(score: float) -> str:
         return "Advanced"
     else:
         return "Expert"
+
+# Admin endpoint to manually trigger course ingestion
+@app.post("/admin/ingest-courses")
+async def ingest_courses(db: Session = Depends(get_db)):
+    """Manually trigger course ingestion from real_courses.json"""
+    try:
+        course_service = CourseIngestionService()
+        course_service.ingest_courses(db)
+        return {"status": "success", "message": "Courses ingested successfully"}
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error ingesting courses: {str(e)}"
+        )
 
 # Include recommendation router
 app.include_router(recommendations.router)

@@ -64,20 +64,15 @@
                 <div class="bg-[#2C2C2C] rounded-lg p-6">
                     <h3 class="text-lg font-semibold mb-4">Next Steps</h3>
                     <div class="space-y-4">
-                        <a href="/" class="block w-full bg-primary hover:bg-blue-600 text-white px-6 py-3 rounded-button text-center">
+                        <a href="/recommendations/{{ session_id }}" class="block w-full bg-primary hover:bg-blue-600 text-white px-6 py-3 rounded-button text-center">
+                            View Personalized Learning Recommendations
+                        </a>
+                        <a href="/" class="block w-full bg-[#3A3A3A] hover:bg-[#4A4A4A] text-white px-6 py-3 rounded-button text-center">
                             Start New Assessment
                         </a>
                         <button onclick="window.print()" class="block w-full bg-[#3A3A3A] hover:bg-[#4A4A4A] text-white px-6 py-3 rounded-button">
                             Print Results
                         </button>
-                    </div>
-                </div>
-                
-                <!-- Course Recommendations -->
-                <div class="bg-[#2C2C2C] rounded-lg p-6 mt-6">
-                    <h3 class="text-lg font-semibold mb-4">Recommended Learning Resources</h3>
-                    <div id="recommendations" class="space-y-4">
-                        <!-- Recommendations will be populated here -->
                     </div>
                 </div>
             </div>
@@ -173,52 +168,6 @@
             `).join('');
         }
 
-        // Function to update recommendations
-        function updateRecommendations(recommendations) {
-            const container = document.getElementById('recommendations');
-            if (!recommendations || recommendations.length === 0) {
-                container.innerHTML = `
-                    <div class="text-center text-[#B0B0B0] py-4">
-                        Great job! No specific recommendations at this time.
-                    </div>
-                `;
-                return;
-            }
-            
-            container.innerHTML = recommendations.map(course => `
-                <div class="bg-[#333333] rounded-lg p-4 hover:bg-[#3A3A3A] transition-colors">
-                    <div class="flex justify-between items-start mb-2">
-                        <h4 class="text-lg font-medium">${course.title}</h4>
-                        <span class="bg-primary/20 text-primary px-2 py-1 rounded text-sm">
-                            ${Math.round(course.relevance_score)}% Match
-                        </span>
-                    </div>
-                    <p class="text-[#B0B0B0] text-sm mb-3">${course.description}</p>
-                    <div class="flex flex-wrap gap-2 mb-3">
-                        ${course.skills.map(skill => `
-                            <span class="bg-[#444444] text-xs px-2 py-1 rounded">
-                                ${skill.split('_').map(word => 
-                                    word.charAt(0).toUpperCase() + word.slice(1)
-                                ).join(' ')}
-                            </span>
-                        `).join('')}
-                    </div>
-                    <div class="flex justify-between items-center text-sm">
-                        <span class="text-[#B0B0B0]">
-                            ${course.platform} • ${course.duration_hours}h
-                        </span>
-                        <div class="flex items-center gap-3">
-                            <span class="text-[#34C759]">$${course.cost}</span>
-                            <a href="${course.url}" target="_blank" 
-                               class="bg-primary hover:bg-blue-600 text-white px-3 py-1 rounded-button">
-                                View Course
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            `).join('');
-        }
-
         // Function to load and display results
         async function loadResults() {
             const sessionId = window.location.pathname.split('/').pop();
@@ -244,14 +193,6 @@
                     formatCompletionTime(resultsData.completion_time);
                 updateSkillDimensions(resultsData.dimension_scores);
                 initializeRadarChart(resultsData.dimension_scores);
-                
-                // Load recommendations
-                const recommendationsResponse = await fetch(`/api/recommendations/${sessionId}`);
-                if (!recommendationsResponse.ok) {
-                    throw new Error('Failed to load recommendations');
-                }
-                const recommendationsData = await recommendationsResponse.json();
-                updateRecommendations(recommendationsData.recommendations);
                 
             } catch (error) {
                 console.error('Error loading results:', error);

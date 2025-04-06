@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Float, JSON
+from sqlalchemy import Column, Integer, String, Float, JSON, PickleType
 from .base import Base
 
 class LearningResource(Base):
@@ -12,6 +12,8 @@ class LearningResource(Base):
     url = Column(String)
     cost = Column(Float)
     duration_hours = Column(Float)
+    embedding = Column(PickleType, nullable=True)  # Store sentence embeddings
+    relevance_score = Column(Float, default=0.0)  # Store relevance score
 
     def to_dict(self):
         return {
@@ -22,5 +24,7 @@ class LearningResource(Base):
             "skills": self.skills,
             "url": self.url,
             "cost": self.cost,
-            "duration_hours": self.duration_hours
+            "duration_hours": self.duration_hours,
+            "embedding": self.embedding,
+            "relevance_score": self.relevance_score
         }
